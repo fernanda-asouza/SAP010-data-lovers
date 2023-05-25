@@ -1,0 +1,257 @@
+html {
+  text-align: center;
+  justify-content: center;
+  font-family: 'Grenze', serif;
+  color: #D1CFCE;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+html::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/papel-de-parede.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -5;
+}
+
+::-webkit-scrollbar{ /*customiza a barra de rolagem*/
+  width: 8px;
+}
+  
+::-webkit-scrollbar-track { /*customiza o caminho da barra de rolagem*/
+  background-color: #2c2c31 ;
+}
+
+ :-webkit-scrollbar-thumb { /*barrinha que percorre o caminho sobe/desce*/
+  background-color: #9e9ea0;
+}
+  
+body {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.bloco{
+  display: inline-block; 
+  font-size: 25px;
+  height: 300px;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  width: 500px;
+  margin: 20px 0 0 100px;
+  }
+ 
+.ladoDireito{
+  float: right;
+  margin: 20px  250px 0 0;
+}
+
+
+
+      
+.exibirCards img {
+  display: flex;
+  flex-wrap: wrap; /* exibe os itens em linha */
+  box-sizing: border-box; /* inclui a largura da borda e do padding no width */
+  height: 300px;
+  width: 230px;
+  justify-content: center; 
+  text-align: center; 
+  margin: 70px 10px 0 10px;
+  object-fit: cover;
+  border-radius: 50px;
+  border: solid 3px rgb(0, 0, 0) ;
+  
+
+}
+
+.exibirCards {
+  display: flex;
+  flex-wrap: wrap; /* exibe os itens em linha */
+  box-sizing: border-box; /* inclui a largura da borda e do padding no width */
+  justify-content: center;  
+  padding: 10px;
+}
+
+select {
+    width: auto;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+   }
+
+   label {
+    font-size: 30px;
+    padding: 15px;
+   }
+
+   button {
+    background-color: #26374C;
+    font-family: 'Grenze', serif;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #D1CFCE;
+    text-decoration: none
+
+    
+
+  }
+
+   footer {
+    background-color: #d1cfce28;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 1.0;
+
+  }
+    
+  footer a, footer p, .ladoDireito a, button a {
+    margin: 5px;
+    text-decoration: none;
+    color: #D1CFCE;
+  }
+  
+  /* Estilos para o modal */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #201d1dea;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid #000000;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+
+
+.close {
+  color: #D1CFCE;;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #porcentagem {
+   font-size: 30px;
+    text-align: center;
+  }
+
+@media screen and (max-width: 768px) { 
+.logo {
+  width: 350px;
+  float: none;
+  margin: 25px 25px 25px 25px;
+  align-self: flex-start;
+}
+
+.ladoDireito {
+  width: 100%;
+  float: none;
+  align-self: flex-start;
+  font-size: 15px;
+  line-height: 1.5;
+  text-shadow: 3px 3px black;
+}
+  h1{
+   text-align: center;
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 20px;
+   
+  }
+  .exibirCards img {
+    height: 200px;
+    width: 130px;
+    border-radius: 50px;
+    border: solid 3px rgb(0, 0, 0) ;  
+    margin: 10px 10px 0 10px;
+    
+ 
+    }
+    
+  .exibirCards {
+    display: flex;
+    flex-wrap: wrap; /* exibe os itens em linha */
+    box-sizing: border-box; /* inclui a largura da borda e do padding no width */
+    justify-content: center;  
+    padding: 5px;
+    margin: 20px;
+    font-size: 12px;
+    text-shadow: 3px 3px black;
+    line-height: 1.0;
+  } 
+        
+  select {
+    width: auto;
+    height: 30px;
+    font-size: 15px;
+   }
+
+  footer {
+    font-size: 18px;
+    line-height: 0.9;
+  }
+
+  .modal-content {
+    font-size: 18px;
+    width: 80%;
+  }
+  
+  button{
+    margin: 30px 0 30px  0;
+    text-decoration: none
+  }
+}    

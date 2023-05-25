@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- para layout responsivo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@300;400&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="./img/iconGoT.png" />
+    <link rel="stylesheet" href="./css/style_informacoes_personagens.css" />
+    <title>Game Of Thrones</title>
+   
+  </head>
+
+  <body>
+    <div id="root">
+      <header> 
+        <div class="bloco">
+          <img src="./img/logo-GOT.jpeg" alt="GameOfThrones" class="logo" /> 
+          
+          <div class="ladoDireito">
+            <h1>Selecione:</h1>
+                  
+            <label for="familia">Família</label>
+            <select id="selecionarFamilia"></select><br>
+
+            <label for="personagem">Personagem</label>
+            <select id="selecionarPersonagens"></select><br>
+
+            <label for="ordenacao">Ordenar</label>
+            <select id="ordenacao"></select><br>
+
+            <h3>Clique nos personagens e saiba mais!!</h3>
+          </div>
+        </div>
+      </header>
+
+      <main>
+
+        <p id="exibirPersonagens" class="exibirCards"></p>
+        <p id="porcentagem"></p>
+        
+        <button><a href="./index.html">Voltar para sinopse</a></button><br>
+        
+        <br><br><br><br>
+        
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 id="modalTituloPersonagem"></h1>
+            <h2 id="modalNomePersonagem"></h2>
+            <h2 id="modalFamiliaPersonagem"></h2>
+            <h2 id="modalNascimentoPersonagem"></h2>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>Fernanda Souza | <a href="https://github.com/fernanda-asouza" target="_blank" >GitHub</a> | <a
+          href="https://www.linkedin.com/in/fernandaasouza/" target="_blank">LinkedIn</a></p>
+        <p>Renata Ribeiro | <a href="https://github.com/rbcribeiro" target="_blank">GitHub</a> | <a
+          href="https://www.linkedin.com/in/rbcribeiro/" target="_blank">LinkedIn</a></p>
+        <p>Bootcamp Laboratoria 2023 </p>
+      </footer>
+
+
+    </div>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
